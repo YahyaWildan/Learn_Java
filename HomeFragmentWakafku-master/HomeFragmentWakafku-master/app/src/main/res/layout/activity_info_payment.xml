@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".InfoPaymentActivity">
+
+    <ImageView
+        android:id="@+id/info_payment_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_arrowback"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_title_info_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="4dp"
+        android:text="@string/txt_payment"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/info_payment_back"
+        app:layout_constraintStart_toEndOf="@+id/info_payment_back"
+        app:layout_constraintTop_toTopOf="@+id/info_payment_back"
+        tools:ignore="MissingConstraints,UnusedAttribute" />
+
+    <LinearLayout
+        android:id="@+id/linear_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_gray"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info_payment_back">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/txt_pembayaran_melalui_bca_virtual_account"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/status_info_payment"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/txt_status"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/BottomColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detail_pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_gray"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_status">
+
+        <TextView
+            android:id="@+id/title_detail_payment"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/txt_detail_pembayaran"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_nama_donatur"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_nama_donatur"
+            android:textColor="@color/txtColorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_detail_payment" />
+
+        <TextView
+            android:id="@+id/txt_username_donatur"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_username_donatur"
+            android:textColor="@color/txtColorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_nama_donatur"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_nama_donatur" />
+
+        <TextView
+            android:id="@+id/pembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/txt_payment"
+            android:textColor="@color/txtColorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_nama_donatur" />
+
+        <TextView
+            android:id="@+id/detail_payment_category"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_zakat_mall"
+            android:textColor="@color/txtColorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/pembayaran"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/pembayaran" />
+
+        <TextView
+            android:id="@+id/waktu_transaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/txt_waktu_transaksi"
+            android:textColor="@color/txtColorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pembayaran" />
+
+        <TextView
+            android:id="@+id/date_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/date_transaction"
+            android:textColor="@color/txtColorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/waktu_transaksi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/hour_transaction"
+            app:layout_constraintTop_toTopOf="@id/waktu_transaksi" />
+
+        <TextView
+            android:id="@+id/hour_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_hour"
+            android:textColor="@color/txtColorSecondary"
+            app:layout_constraintBottom_toBottomOf="@id/date_transaction"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/date_transaction" />
+
+        <TextView
+            android:id="@+id/total_pembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/txt_total_pembayaran"
+            android:textColor="@color/txtColorSecondary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/waktu_transaksi" />
+
+        <TextView
+            android:id="@+id/total_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_total_payment"
+            android:textColor="@color/txtColorSecondary"
+            app:layout_constraintBottom_toBottomOf="@id/total_pembayaran"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/total_pembayaran" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_gray"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_pembayaran">
+
+        <TextView
+            android:id="@+id/txt_yang_dibayar"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/txt_yang_dibayar"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@id/txt_yang_dibayar"
+            android:layout_marginTop="4dp"
+            android:text="@string/txt_subtitle"
+            android:textColor="@color/txtColorSecondary"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/logo_bank_payment"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/txt_subtitle"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_logo1" />
+
+        <TextView
+            android:id="@+id/name_bank_payment"
+            android:layout_width="135dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/txt_subtitle"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/logo_bank_payment"
+            android:gravity="center_vertical"
+            android:text="@string/txt_virtual_account_bca"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/number_bank_payment"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@id/logo_bank_payment"
+            android:layout_marginTop="4dp"
+            android:text="@string/txt_number"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:drawableEndCompat="@drawable/ic_copy_vector" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/number_bank_payment"
+            android:background="@drawable/button_line" />
+
+        <TextView
+            android:id="@+id/nominal_payment"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@id/line"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:text="@string/txt_nominal"
+            android:textColor="@color/BottomColor" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/nominal_payment"
+            android:background="@drawable/button_line" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

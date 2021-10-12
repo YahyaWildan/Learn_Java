@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor = "@color/white">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/txt_beranda"
+        android:icon="@drawable/ic_home"
+        app:cnb_iconColor = "@color/white"
+        app:cnb_textColor = "@color/white"
+        app:cnb_backgroundColor = "@color/BottomColor"
+        />
+    <item
+        android:id="@+id/kajian"
+        android:title="@string/txt_kajian"
+        android:icon="@drawable/ic_play"
+        app:cnb_iconColor = "@color/white"
+        app:cnb_textColor = "@color/white"
+        app:cnb_backgroundColor = "@color/BottomColor"
+        />
+    <item
+        android:id="@+id/marketplace"
+        android:title="@string/txt_markeplace"
+        android:icon="@drawable/ic_bag_2"
+        app:cnb_iconColor = "@color/white"
+        app:cnb_textColor = "@color/white"
+        app:cnb_backgroundColor = "@color/BottomColor"
+        />
+    <item
+        android:id="@+id/profile"
+        android:title="@string/txt_profile"
+        android:icon="@drawable/ic_profile"
+        app:cnb_iconColor = "@color/white"
+        app:cnb_textColor = "@color/white"
+        app:cnb_backgroundColor = "@color/BottomColor"
+        />
+
+</menu>

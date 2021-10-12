@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_title_zakat"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:text="@string/txt_title_zakat"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/txt_intruksi_zakat"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/txt_jenis_zakat"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_infak"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/lis_zakat"
+        android:theme="@style/SpinnerTheme"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/txt_wealth"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/txt_wealth"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_action_hitung_zakat"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_hitung_sendiri_zakat_mall"
+            android:textColor="#25282B"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/txt_wealth"
+            app:layout_constraintStart_toEndOf="@id/txt_wealth"
+            app:layout_constraintTop_toTopOf="@id/txt_wealth" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/btn_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/btnSwitch"
+            app:layout_constraintBottom_toBottomOf="@id/txt_action_hitung_zakat"
+            app:layout_constraintStart_toEndOf="@id/txt_action_hitung_zakat"
+            app:layout_constraintTop_toTopOf="@id/txt_action_hitung_zakat" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_gray"
+            app:layout_constraintTop_toBottomOf="@id/txt_wealth" />
+
+        <TextView
+            android:id="@+id/rp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2dp"
+            android:padding="8dp"
+            android:text="@string/txt_rp"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toTopOf="@id/view"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_wealth"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/rp"
+            app:layout_constraintStart_toEndOf="@id/rp"
+            app:layout_constraintTop_toTopOf="@id/rp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/txt_total_zakat"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <TextView
+            android:id="@+id/txt_total_zakat"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/txt_total_zakat"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <TextView
+            android:id="@+id/rp_total_zakat"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_rp"
+            android:textColor="@color/BottomColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_total_zakat" />
+
+        <TextView
+            android:id="@+id/total_zakat"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/txt_0"
+            android:textColor="@color/BottomColor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/rp_total_zakat"
+            app:layout_constraintStart_toEndOf="@id/rp_total_zakat"
+            app:layout_constraintTop_toTopOf="@id/rp_total_zakat" />
+
+        <Button
+            android:id="@+id/btn_actoin_bayar_zakat"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/BottomColor"
+            android:text="@string/txt_bayar_zakat"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/rp_total_zakat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_total_zakat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

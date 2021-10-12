@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:elevation="1dp"
+    android:translationZ="1dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:riv_corner_radius="8dp"
+            android:id="@+id/img_favorite_product"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/produc2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_favorite_product"
+            app:layout_constraintTop_toTopOf="@id/img_favorite_product"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/product_favorite_name"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:text="@string/txt_name_produc"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_warna"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_warna"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/product_favorite_name" />
+
+            <TextView
+                android:id="@+id/color_product"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/txt_navy"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/txt_warna"
+                app:layout_constraintStart_toEndOf="@id/txt_warna"
+                app:layout_constraintTop_toTopOf="@id/txt_warna" />
+
+            <TextView
+                android:id="@+id/txt_ukuran"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_ukuran"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/txt_warna"
+                app:layout_constraintStart_toEndOf="@id/color_product"
+                app:layout_constraintTop_toTopOf="@id/txt_warna" />
+
+            <TextView
+                android:id="@+id/size_product"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="@string/txt_size"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/txt_warna"
+                app:layout_constraintStart_toEndOf="@id/txt_ukuran"
+                app:layout_constraintTop_toTopOf="@id/txt_warna" />
+
+            <TextView
+                android:id="@+id/rp"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="@string/txt_rp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_warna" />
+
+            <TextView
+                android:id="@+id/price_product"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:gravity="center_vertical"
+                android:text="@string/txt_price_product"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/rp"
+                app:layout_constraintStart_toEndOf="@id/rp"
+                app:layout_constraintTop_toTopOf="@id/rp" />
+
+            <ImageView
+                android:id="@+id/action_delete_product"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rp" />
+
+            <Button
+                android:id="@+id/actionAddCart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/BottomColor"
+                android:padding="16dp"
+                android:text="@string/txt_tambah_keranjang"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/action_delete_product"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/action_delete_product"
+                app:layout_constraintTop_toTopOf="@id/action_delete_product" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

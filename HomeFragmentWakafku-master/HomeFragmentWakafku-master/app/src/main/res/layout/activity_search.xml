@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    tools:context=".SearchActivity">
+
+    <ImageView
+        android:id="@+id/search_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_arrowback"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_title_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="4dp"
+        android:text="@string/txt_search"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/search_back"
+        app:layout_constraintStart_toEndOf="@+id/search_back"
+        app:layout_constraintTop_toTopOf="@+id/search_back"
+        tools:ignore="MissingConstraints,UnusedAttribute" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/search_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_gray"
+        android:drawableEnd="@drawable/ic_search"
+        android:hint="@string/txt_search"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColorHint="#A0A4A8"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_back" />
+
+    <TextView
+        android:id="@+id/txt_pencarian"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txt_pencarian_terakhir"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_pencarian" />
+</androidx.constraintlayout.widget.ConstraintLayout>

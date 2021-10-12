@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">HomeFragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_location">Gajah Mungkur,Semarang</string>
+    <string name="txt_magrib">Magrib</string>
+    <string name="txt_waktu">18:09</string>
+    <string name="home_txt_waktu_minus">- 1:29:01</string>
+    <string name="home_tanggal_nasional">Sabtu , 20 Februari</string>
+    <string name="home_txt_tanggal_islam">8 Rajab 1442 AH</string>
+    <string name="txt_al_quran">Al-Quran</string>
+    <string name="txt_tokoh">Tokoh</string>
+    <string name="txt_zizwaf">Ziswaf</string>
+    <string name="txt_lain_lain">Lain-lain</string>
+    <string name="txt_berita">Berita</string>
+    <string name="txt_lebih_banyak">Lebih banyak</string>
+    <string name="txt_lorem">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam laoreet sollicitudin risus in elementum. Placerat sed eu adipiscing eget integer. Pretium eget sed tincidunt at suscipit.</string>
+    <string name="txt_tgl">21 Februari 2021</string>
+    <string name="txt_title">Judul</string>
+    <string name="txt_readmore">Read More</string>
+    <string name="txt_kajian">Kajian</string>
+    <string name="txt_kalam">Kalam</string>
+    <string name="txt_read_more">Read More</string>
+    <string name="txt_beranda">Beranda</string>
+    <string name="txt_markeplace">Markeplace</string>
+    <string name="txt_profile">Profile</string>
+    <string name="txt_title_category">Semua Kategori</string>
+    <string name="txt_artikel">Artikel</string>
+    <string name="txt_keislaman">Keislaman</string>
+    <string name="txt_ziarah">Ziarah</string>
+    <string name="txt_topik">Topik</string>
+    <string name="txt_bacaan">Bacaan</string>
+    <string name="txt_doa">Doa</string>
+    <string name="txt_yasin_tahlil">Yasin dan tahlil</string>
+    <string name="txt_wirid">Wirid</string>
+    <string name="txt_pengajian_shalawat">Pengajian dan shalawat</string>
+    <string name="txt_maulid">Maulid</string>
+    <string name="txt_pengajian">Pengajian</string>
+    <string name="txt_kiblat">Kiblat</string>
+    <string name="txt_jadwal_sholat">Jadwal sholat</string>
+    <string name="txt_shalat">Shalat</string>
+    <string name="txt_ziswaf_donasi">Ziszwaf dan Donasi</string>
+    <string name="txt_zakat">Zakat</string>
+    <string name="txt_infak">Infak</string>
+    <string name="txtwakaf">Wakaf</string>
+    <string name="txt_donasi">Donasi</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="txt_search">Cari</string>
+    <string name="txt_pencarian_terakhir">Pencarian Terakhir</string>
+    <string name="txt_q_s_al_imran_188">Q.S Al-Imran 188</string>
+    <string name="txt_semua">Semua</string>
+    <string name="txt_sejarah">Sejarah</string>
+    <string name="txt_cinta">Cinta</string>
+    <string name="txt_tauhid">Tauhid</string>
+    <string name="txt_news">Terbaru</string>
+    <string name="txt_title_fragment_kajian_new">Peringatan Hari Sa...</string>
+    <string name="txt_channel">NU Channel</string>
+    <string name="txt_recommendation">Rekomendasi</string>
+    <string name="txt_favorite">Favorite</string>
+    <string name="txt_listenUp">Dengarkan</string>
+    <string name="txt_watch">Tonton</string>
+    <string name="title_watch">Gus Muwafiq : Menjadi Ulama itu Berat</string>
+    <string name="txt_gus_muwafiq_channel">Gus Muwafiq Channel</string>
+    <string name="txt_follower">190.000 follower</string>
+    <string name="txt_subsribe">Ikuti</string>
+    <string name="txt_content_desc">Menurut Imam Ghazali, jka ia benar sudah yakin berdasarkan Al-Quran, hadis, Ijma dan qiyas, maka ia boleh berfatwa. Jika meragukan, maka jawab saja tidak tahu (la adri). Menurut As-Sya’bi, menjawab tidak tahu termasuk setengah dari pengetahuan. Ibnu Mas’ud menuduh gila orang yang begitu gampang menjawab pertanyaan agama. Adab kedua, pengajar harus mengukur pemahaman muridnya. Mabhas keempat, sifat-sifat orang berilmu.</string>
+    <string name="txt_deskripsi">Deskripsi</string>
+    <string name="txt_share">Bagikan</string>
+    <string name="txt_comment">Komentar</string>
+    <string name="add_comment">Tambahkan komentar</string>
+    <string name="txt_name">Pamungkas</string>
+    <string name="txt_comment_usr">Subahanalloh.. ngajinya selow. Jadi yang denger bisa memahami</string>
+    <string name="txt_comment_user">Hebat pak kyai ini ingatannya  dan menceritakan  rentetan sejarah Islam, semoga beliau  selalu sehat panjang umur. Aamiin yrb</string>
+    <string name="txt_name_user2">Budi Tamrin</string>
+    <string name="txt_title_zakat">Ayo hitung zakat kamu!</string>
+    <string name="txt_intruksi_zakat">Coba masukkan jumlah hartamu dan kalkulator kami akan menghitung jumlah zakatnya</string>
+    <string name="txt_jenis_zakat">Jenis zakat</string>
+    <string name="txt_pilih_jenis_zakat">Pilih jenis zakat</string>
+    <string name="txt_wealth">Kekayaan (1 Tahun)</string>
+    <string name="txt_hitung_sendiri_zakat_mall">Hitung sendiri zakat mall</string>
+    <string name="txt_rp">Rp </string>
+    <string name="txt_total_zakat">Total Zakat Kamu</string>
+    <string name="txt_0">0</string>
+    <string name="txt_bayar_zakat">Bayar Zakat</string>
+    <string name="txt_method_payment">Metode Pembayaran</string>
+    <string name="txt_masukan_metode_pembayaran">Masukan metode pembayaran</string>
+    <string name="txt_jenis_infak">Jenis infak</string>
+    <string name="txt_nominal_infak">Nominal Infak</string>
+    <string name="txt_bayar_infak">Bayar Infak</string>
+    <string name="txt_total_infak">Total Infak Kamu</string>
+    <string name="txt_bayar_wakaf">Bayar Wakaf</string>
+    <string name="txt_total_wakaf">Total Wakaf Kamu</string>
+    <string name="txt_nominal_wakaf">Nominal Wakaf</string>
+    <string name="txt_payment">Pembayaran</string>
+    <string name="txt_pembayaran_melalui_bca_virtual_account">Pembayaran melalui BCA virtual account</string>
+    <string name="txt_status">Pending</string>
+    <string name="txt_detail_pembayaran">Detail Pembayaran</string>
+    <string name="txt_nama_donatur">Nama Donatur</string>
+    <string name="txt_username_donatur">Budiman</string>
+    <string name="txt_zakat_mall">Zakat Mall</string>
+    <string name="txt_waktu_transaksi">Waktu Transaksi</string>
+    <string name="date_transaction">2021-01-27</string>
+    <string name="txt_hour">16:03:00</string>
+    <string name="txt_total_pembayaran">Total Pembayaran</string>
+    <string name="txt_total_payment">Rp 500.000</string>
+    <string name="txt_yang_dibayar">Yang Dibayar</string>
+    <string name="txt_subtitle">Sebentar lagi kamu akan membersihkan hartamu</string>
+    <string name="txt_virtual_account_bca">Virtual Account BCA</string>
+    <string name="txt_number">129108636079813</string>
+    <string name="txt_nominal">Rp. 500.000,00</string>
+    <string name="txt_search_marketplace">Cari kebutuhan kamu</string>
+    <string name="txt_produk_terbaru">Produk Terbaru</string>
+    <string name="txt_name_produc">Gamis Santai Formal</string>
+    <string name="txt_price_product">350.000</string>
+    <string name="txt_warna">Warna : </string>
+    <string name="txt_navy">Navy</string>
+    <string name="txt_ukuran">Ukuran : </string>
+    <string name="txt_size">M</string>
+    <string name="txt_tambah_keranjang">Tambah Keranjang</string>
+    <string name="txt_cart">Keranjang</string>
+    <string name="txt_select_all">Pilih semua</string>
+    <string name="txt_delete">Hapus</string>
+    <string name="txt_total_harga">Total Harga</string>
+    <string name="txt_detail_product">Detail Produk</string>
+    <string name="txt_name_store">Toko Tunik</string>
+    <string name="txt_address">Semarang, Jawa Tengah</string>
+    <string name="txt_color">Warna</string>
+    <string name="txt_detail_pesanan">Detail Pesanan</string>
+    <string name="txt_alamat_pengiriman">Alamat Pengiriman</string>
+    <string name="txt_ex_address">Jl. Kelud Raya No 32-34 Petompon,Gajah Mungkur, Semarang,50273</string>
+    <string name="txt_toko_tunik">Toko Tunik</string>
+    <string name="txt_pengiriman">Pengiriman</string>
+    <string name="txt_ringkasan_belanja">Ringkasan Belanja</string>
+    <string name="txt_jumlah_produk">Jumlah Produk</string>
+    <string name="txt_price_courier_delivery">siCepat GOKIL (Rp 30.000)</string>
+    <string name="txt_estimasi">Estimasi pengiriman 2-3 hari</string>
+    <string name="txt_quantity_product">2 produk</string>
+    <string name="txt_harga_produk">Harga produk</string>
+    <string name="txt_ongkos_kirim">Ongkos kirim</string>
+    <string name="txt_total_tagihan">Total Tagihan</string>
+    <string name="txt_info_payment">Informasi Pembayaran</string>
+    <string name="txt_deadline">Lakukan pembayaran sebelum 2 Februari 2020</string>
+    <string name="code_payment">Kode Pembayaran</string>
+    <string name="txt_copy">Salin</string>
+    <string name="txt_panduan_pembayaran">Panduan Pembayaran</string>
+    <string name="txt_tagihan_sudah_termasuk_biaya_layanan">Tagihan sudah termasuk biaya layanan</string>
+    <string name="txt">Pembayaran di gerai lain akan dikenakan biaya  berbeda</string>
+    <string name="txt_pilih_pembayaran">Pilih Pembayaran</string>
+    <string name="txt_list_address">Daftar Alamat</string>
+    <string name="txt_tambah_alamat">Tambah Alamat</string>
+    <string name="txt_lainnya">Lainnya</string>
+    <string name="txt_ubah_alamat">Ubah Alamat</string>
+    <string name="txt_hapus_alamat">Hapus Alamat</string>
+
+
+    <!--    string array spinner infak-->
+    <string-array name="list_infak">
+        <item>Pilih Jenis Infak</item>
+        <item>Berbagi Berkah</item>
+        <item>Berbagi Rezeki</item>
+    </string-array>
+
+    <!--        spinner zakat-->
+    <string-array name="lis_zakat">
+        <item>Pilih Jenis Zakat</item>
+        <item>Maal</item>
+    </string-array>
+</resources>

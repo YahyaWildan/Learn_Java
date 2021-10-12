@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_masjid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/masjid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/home_icon_location"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_location"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView_masjid" />
+
+        <TextView
+            android:id="@+id/home_location"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:padding="4dp"
+            android:text="@string/txt_location"
+            android:textColor="@color/white"
+
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/home_icon_location"
+            app:layout_constraintStart_toEndOf="@+id/home_icon_location"
+            app:layout_constraintTop_toTopOf="@+id/home_icon_location"
+            tools:ignore="MissingConstraints,UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/home_notification"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_notification"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="@id/home_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/home_location" />
+
+        <TextView
+            android:id="@+id/home_waktu_sholat"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="87dp"
+            android:text="@string/txt_magrib"
+            android:textColor="@color/white"
+
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView_masjid"
+            tools:ignore="MissingConstraints,UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/home_times"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_waktu"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_waktu_sholat" />
+
+        <TextView
+            android:id="@+id/home_times_remain"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/home_txt_waktu_minus"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_times" />
+
+        <TextView
+            android:id="@+id/home_date"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/txt_tgl"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_times_remain"
+            tools:targetApi="p" />
+
+        <TextView
+            android:id="@+id/home_muslim_date"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/home_txt_tanggal_islam"
+            android:textColor="@color/white"
+
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_date" />
+
+        <LinearLayout
+            android:id="@+id/home_menu_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded"
+            android:baselineAligned="false"
+            android:elevation="1dp"
+            android:orientation="horizontal"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:translationZ="1dp"
+            android:weightSum="4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_muslim_date">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/home_menu_alquran"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/home_icon_alquran"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_icon_alquran"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_alquran"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:text="@string/txt_al_quran"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/home_icon_alquran"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/home_menu_tokoh"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_icon_tokoh"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_icon_tokoh"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_tokoh"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:text="@string/txt_tokoh"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_icon_tokoh"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/home_menu_zizwaf"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_icon_zizwaf"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_icon_zizwaf"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_zizwaf"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:text="@string/txt_zizwaf"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_icon_zizwaf"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/home_menu_all"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_icon_lain_lain"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_icon_lain"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_lain_lain"
+                    android:layout_width="0dp"
+                    android:layout_height="19dp"
+                    android:text="@string/txt_lain_lain"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_icon_lain_lain"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedsroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:scrollbarStyle="insideInset"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_menu_navbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_berita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/txt_berita"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/home_view_all_berita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/txt_lebih_banyak"
+                    android:textColor="@color/txtColor"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_berita"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_berita" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_container_berita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_berita" />
+
+                <TextView
+                    android:id="@+id/txt_kajian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/txt_kajian"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/home_container_berita"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/home_view_all_kajian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/txt_lebih_banyak"
+                    android:textColor="@color/txtColor"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_kajian"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_kajian" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_container_kajian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_kajian" />
+
+                <TextView
+                    android:id="@+id/txt_kalam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/txt_kalam"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/home_container_kajian"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/home_view_all_kalam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/txt_lebih_banyak"
+                    android:textColor="@color/txtColor"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txt_kalam"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txt_kalam" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_container_kalam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/home_view_all_kalam" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

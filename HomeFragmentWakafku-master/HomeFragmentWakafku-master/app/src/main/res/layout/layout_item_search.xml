@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/text_search"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded"
+        android:text="@string/txt_q_s_al_imran_188"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:elevation="1dp"
+        android:translationZ="1dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_margin="4dp"
+        />
+
+    
+</RelativeLayout>

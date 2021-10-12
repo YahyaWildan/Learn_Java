@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    tools:context=".DetailPesananActivity">
+
+    <ImageView
+        android:id="@+id/detail_pesanan_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_arrowback"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_title_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="4dp"
+        android:text="@string/txt_detail_pesanan"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/detail_pesanan_back"
+        app:layout_constraintStart_toEndOf="@+id/detail_pesanan_back"
+        app:layout_constraintTop_toTopOf="@+id/detail_pesanan_back"
+        tools:ignore="MissingConstraints,UnusedAttribute" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_address"
+        android:layout_width="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded"
+        android:elevation="1dp"
+        android:padding="16dp"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_pesanan_back">
+
+        <ImageView
+            android:id="@+id/detail_pesanan_location"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_location"
+            android:backgroundTint="@color/BottomColor"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_alamat_pengiriman"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:text="@string/txt_alamat_pengiriman"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/detail_pesanan_location"
+            app:layout_constraintStart_toEndOf="@id/detail_pesanan_location"
+            app:layout_constraintTop_toTopOf="@id/detail_pesanan_location" />
+
+        <TextView
+            android:id="@+id/txt_action_change_address"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_ubah_alamat"
+            android:textColor="@color/BottomColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_alamat_pengiriman"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_alamat_pengiriman" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_ex_address"
+            android:textColor="@color/txtColorSecondary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail_pesanan_location" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_detail_product"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded"
+        android:elevation="1dp"
+        android:padding="16dp"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_address">
+
+        <TextView
+            android:id="@+id/detail_pesanan_name_store"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_toko_tunik"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_detail_pesanan"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/product1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail_pesanan_name_store"
+            app:riv_corner_radius="8dp" />
+
+        <TextView
+            android:id="@+id/detail_pesanan_name_product"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:text="@string/txt_name_produc"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/img_detail_pesanan"
+            app:layout_constraintTop_toTopOf="@id/img_detail_pesanan" />
+
+        <TextView
+            android:id="@+id/txt_warna"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_warna"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/rp"
+            app:layout_constraintStart_toStartOf="@id/detail_pesanan_name_product"
+            app:layout_constraintTop_toBottomOf="@id/detail_pesanan_name_product" />
+
+        <TextView
+            android:id="@+id/color_product"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/txt_navy"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/txt_warna"
+            app:layout_constraintStart_toEndOf="@id/txt_warna"
+            app:layout_constraintTop_toTopOf="@id/txt_warna" />
+
+        <TextView
+            android:id="@+id/txt_ukuran"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/txt_ukuran"
+            android:textColor="@color/light_gray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_warna"
+            app:layout_constraintStart_toEndOf="@id/color_product"
+            app:layout_constraintTop_toTopOf="@id/txt_warna" />
+
+        <TextView
+            android:id="@+id/size_product"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/txt_size"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/txt_warna"
+            app:layout_constraintStart_toEndOf="@id/txt_ukuran"
+            app:layout_constraintTop_toTopOf="@id/txt_warna" />
+
+        <TextView
+            android:id="@+id/rp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_rp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/img_detail_pesanan"
+            app:layout_constraintStart_toStartOf="@id/detail_pesanan_name_product"
+            app:layout_constraintTop_toBottomOf="@id/txt_warna" />
+
+        <TextView
+            android:id="@+id/price_product"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center_vertical"
+            android:text="@string/txt_price_product"
+            android:textColor="@color/black"
+            android:layout_marginStart="4dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/rp"
+            app:layout_constraintStart_toEndOf="@id/rp"
+            app:layout_constraintTop_toTopOf="@id/rp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_pengiriman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_border"
+        android:elevation="1dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:padding="16dp"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_detail_product">
+
+        <ImageView
+            android:id="@+id/img_delivery"
+            android:layout_width="24dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_delivery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_pengiriman"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/txt_pengiriman"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/img_delivery"
+            app:layout_constraintStart_toEndOf="@id/img_delivery"
+            app:layout_constraintTop_toTopOf="@id/img_delivery" />
+
+        <ImageView
+            android:id="@+id/btn_action_delivery"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_right"
+            android:backgroundTint="@color/BottomColor"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_pengiriman" />
+
+        <TextView
+            android:id="@+id/txt_courier_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_price_courier_delivery"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_delivery" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:text="@string/txt_estimasi"
+            android:textColor="@color/txtColorSecondary"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_courier_delivery" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_ringkasan_belanja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded"
+        android:elevation="1dp"
+        android:padding="16dp"
+        android:translationZ="1dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_pengiriman">
+
+        <TextView
+            android:id="@+id/title_ringkasan_belanja"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_ringkasan_belanja"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_jumlah_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_jumlah_produk"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_ringkasan_belanja" />
+
+        <TextView
+            android:id="@+id/quantity_product"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_quantity_product"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_jumlah_produk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_jumlah_produk" />
+
+        <TextView
+            android:id="@+id/txt_harga_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_harga_produk"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_jumlah_produk" />
+
+        <TextView
+            android:id="@+id/txt_rp_ringkasan_belanja"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_rp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_harga_produk"
+            app:layout_constraintEnd_toStartOf="@id/detail_pesanan_price_product"
+            app:layout_constraintTop_toTopOf="@id/txt_harga_produk" />
+
+        <TextView
+            android:id="@+id/detail_pesanan_price_product"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_price_product"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_rp_ringkasan_belanja"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_rp_ringkasan_belanja" />
+
+        <TextView
+            android:id="@+id/txt_ongkos_kirim"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/txt_ongkos_kirim"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_harga_produk" />
+
+        <TextView
+            android:id="@+id/txt_rp_ringkasan_belanja_ongkos_kirim"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_rp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_ongkos_kirim"
+            app:layout_constraintEnd_toStartOf="@id/detail_pesanan_price_product"
+            app:layout_constraintTop_toTopOf="@id/txt_ongkos_kirim" />
+
+        <TextView
+            android:id="@+id/detail_pesanan_ongkos_kirim"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_price_product"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_rp_ringkasan_belanja_ongkos_kirim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_rp_ringkasan_belanja_ongkos_kirim" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/txt_total_tagihan"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_total_tagihan"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/txt_rp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_rp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="@string/txt_rp"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/cart_total_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_rp"
+            app:layout_constraintStart_toEndOf="@id/txt_rp"
+            app:layout_constraintTop_toTopOf="@id/txt_rp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="4dp"
+            android:text="@string/txt_price_product"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/BottomColor"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:id="@+id/action_pilih_pembayaran"
+            android:textAlignment="center"
+            android:text="Pilih Pembayaran"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_total_tagihan"
+            app:layout_constraintBottom_toBottomOf="@id/txt_rp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

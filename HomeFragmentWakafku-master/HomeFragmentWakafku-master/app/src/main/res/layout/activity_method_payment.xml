@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MethodPaymentActivity">
+
+    <ImageView
+        android:id="@+id/method_payment_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_arrowback"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_title_method_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="4dp"
+        android:text="@string/txt_method_payment"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/method_payment_back"
+        app:layout_constraintStart_toEndOf="@+id/method_payment_back"
+        app:layout_constraintTop_toTopOf="@+id/method_payment_back"
+        tools:ignore="MissingConstraints,UnusedAttribute" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/txt_title_method_payment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/txt_masukan_metode_pembayaran"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <ExpandableListView
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorRight"
+            android:id="@+id/expandableListView"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

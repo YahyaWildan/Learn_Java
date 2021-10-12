@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InstanceStateExercieActivity</string>
+    <string name="txt_0">0</string>
+    <string name="txt_count">count</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MarketplaceFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_marketplace_produc"
+            android:layout_width="308dp"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_gray"
+            android:drawableEnd="@drawable/ic_search"
+            android:drawableTint="@color/light_gray"
+            android:hint="@string/txt_search_marketplace"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColorHint="@color/light_gray"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/marketplace_shopcart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_shopcart"
+            app:layout_constraintBottom_toBottomOf="@id/search_marketplace_produc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/search_marketplace_produc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_marketplace_produc">
+
+            <ImageView
+                android:id="@+id/img_marketplace_header"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/heaeder" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/txt_produk_terbaru"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/marketplace_tablayout_category_produc"
+                style="@style/tabLayoutCategory"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                app:tabSelectedTextColor="@color/BottomColor" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/marketplace_viewpager_category_produc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

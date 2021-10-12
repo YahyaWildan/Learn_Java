@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LifecycleAndroid</string>
+    <string name="txt_go_to_second_activity">Go To Second Activity</string>
+    <string name="txt_go_to_main_activity">Back To Main Activity</string>
+    <string name="txt_0">0</string>
+    <string name="txt_tambah">Tambah</string>
+    <string name="txt_go_to_explicit_intent">Go To Explicit Intent</string>
+    <string name="txt_go_to_implicit_intent">Go To Implicit Intent</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_google">Google</string>
+    <string name="txt_facebook">Facebook</string>
+    <string name="txt_forgot_password">Forgot Password?</string>
+</resources>
